@@ -23,5 +23,5 @@ jobs:
       - name: Build and Deploy to CloudHub
         run: mvn clean package mule:deploy --no-transfer-progress
         env:
-          ANYPOINT_CLIENT_ID: ${{ secrets.ANYPOINT_CLIENT_ID }}
-          ANYPOINT_CLIENT_SECRET: ${{ secrets.ANYPOINT_CLIENT_SECRET }}
+  ANYPOINT_CLIENT_ID: ${{ secrets.CONNECTED_APP_CLIENT_ID }}
+  ANYPOINT_CLIENT_SECRET: ${{ secrets.CONNECTED_APP_CLIENT_SECRET }}
