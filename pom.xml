@@ -13,7 +13,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <app.runtime>4.6.0</app.runtime>
+        <app.runtime>4.11.3</app.runtime>
         <mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
     </properties>
 
@@ -34,7 +34,7 @@
         </pluginRepository>
     </pluginRepositories>
 
-    <!-- Project Dependencies -->
+    <!-- Dependencies -->
     <dependencies>
 
         <!-- HTTP Connector -->
@@ -67,20 +67,21 @@
                         <provider>MC</provider>
                         <environment>Sandbox</environment>
                         <target>Shared Space</target>
+                        <targetType>sharedSpace</targetType>
 
                         <!-- Application -->
                         <applicationName>testing-github-madhavi-001</applicationName>
 
                         <!-- Runtime -->
                         <muleVersion>${app.runtime}</muleVersion>
-                        <releaseChannel>LTS</releaseChannel>
-                        <javaVersion>8</javaVersion>
+                        <releaseChannel>EDGE</releaseChannel>
+                        <javaVersion>17</javaVersion>
 
                         <!-- Resources -->
                         <replicas>1</replicas>
                         <vCores>0.1</vCores>
 
-                        <!-- Connected App Authentication -->
+                        <!-- Authentication -->
                         <connectedAppClientId>${env.ANYPOINT_CLIENT_ID}</connectedAppClientId>
                         <connectedAppClientSecret>${env.ANYPOINT_CLIENT_SECRET}</connectedAppClientSecret>
                         <connectedAppGrantType>client_credentials</connectedAppGrantType>
