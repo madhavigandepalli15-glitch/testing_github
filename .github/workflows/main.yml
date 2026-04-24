@@ -21,7 +21,7 @@ jobs:
           java-version: 8
 
       - name: Build and Deploy
-        run: mvn clean deploy --no-transfer-progress
+        run: mvn clean package mule:deploy --no-transfer-progress
         env:
           ANYPOINT_USERNAME: ${{ secrets.ANYPOINT_USERNAME }}
           ANYPOINT_PASSWORD: ${{ secrets.ANYPOINT_PASSWORD }}
