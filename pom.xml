@@ -17,7 +17,7 @@
         <mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
     </properties>
 
-    <!-- MuleSoft repositories -->
+    <!-- MuleSoft Repositories -->
     <repositories>
         <repository>
             <id>mulesoft-releases</id>
@@ -34,7 +34,7 @@
         </pluginRepository>
     </pluginRepositories>
 
-    <!-- Dependencies -->
+    <!-- Project Dependencies -->
     <dependencies>
 
         <!-- HTTP Connector -->
@@ -58,34 +58,36 @@
                 <extensions>true</extensions>
 
                 <configuration>
-                    <cloudHubDeployment>
+                    <cloudhub2Deployment>
 
-                        <!-- Anypoint Platform URL -->
+                        <!-- Anypoint Platform -->
                         <uri>https://anypoint.mulesoft.com</uri>
+
+                        <!-- CloudHub 2.0 -->
+                        <provider>MC</provider>
+                        <environment>Sandbox</environment>
+                        <target>Shared Space</target>
+
+                        <!-- Application -->
+                        <applicationName>testing-github-madhavi-001</applicationName>
 
                         <!-- Runtime -->
                         <muleVersion>${app.runtime}</muleVersion>
+                        <releaseChannel>LTS</releaseChannel>
+                        <javaVersion>8</javaVersion>
+
+                        <!-- Resources -->
+                        <replicas>1</replicas>
+                        <vCores>0.1</vCores>
 
                         <!-- Connected App Authentication -->
                         <connectedAppClientId>${env.ANYPOINT_CLIENT_ID}</connectedAppClientId>
                         <connectedAppClientSecret>${env.ANYPOINT_CLIENT_SECRET}</connectedAppClientSecret>
                         <connectedAppGrantType>client_credentials</connectedAppGrantType>
 
-                        <!-- App Name (must be unique) -->
-                        <applicationName>testing-github-madhavi-001</applicationName>
-
-                        <!-- Environment -->
-                        <environment>Sandbox</environment>
-
-                        <!-- Workers -->
-                        <workers>1</workers>
-                        <workerType>MICRO</workerType>
-
-                        <!-- Region -->
-                        <region>us-east-1</region>
-
-                    </cloudHubDeployment>
+                    </cloudhub2Deployment>
                 </configuration>
+
             </plugin>
 
         </plugins>
