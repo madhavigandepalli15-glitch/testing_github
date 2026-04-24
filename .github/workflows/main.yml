@@ -20,8 +20,8 @@ jobs:
           distribution: temurin
           java-version: 8
 
-      - name: Build and Deploy
-  run: mvn clean package mule:deploy --no-transfer-progress
-  env:
-    ANYPOINT_CLIENT_ID: ${{ secrets.ANYPOINT_CLIENT_ID }}
-    ANYPOINT_CLIENT_SECRET: ${{ secrets.ANYPOINT_CLIENT_SECRET }}
+      - name: Build and Deploy to CloudHub
+        run: mvn clean package mule:deploy --no-transfer-progress
+        env:
+          ANYPOINT_CLIENT_ID: ${{ secrets.ANYPOINT_CLIENT_ID }}
+          ANYPOINT_CLIENT_SECRET: ${{ secrets.ANYPOINT_CLIENT_SECRET }}
