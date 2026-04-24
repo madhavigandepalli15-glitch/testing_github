@@ -66,7 +66,7 @@
                         <!-- CloudHub 2.0 -->
                         <provider>MC</provider>
                         <environment>Sandbox</environment>
-                             <target>Shared Space</target>
+                             <target>US East (Ohio)</target>
                         
                         <!-- Application -->
                         <applicationName>testing-github-madhavi-001</applicationName>
