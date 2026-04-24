@@ -17,11 +17,9 @@
         <mule.maven.plugin.version>4.6.0</mule.maven.plugin.version>
     </properties>
 
-    <!-- MuleSoft Repositories -->
     <repositories>
         <repository>
             <id>mulesoft-releases</id>
-            <name>MuleSoft Releases</name>
             <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
         </repository>
     </repositories>
@@ -29,22 +27,17 @@
     <pluginRepositories>
         <pluginRepository>
             <id>mulesoft-releases</id>
-            <name>MuleSoft Releases</name>
             <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
         </pluginRepository>
     </pluginRepositories>
 
-    <!-- Dependencies -->
     <dependencies>
-
-        <!-- HTTP Connector -->
         <dependency>
             <groupId>org.mule.connectors</groupId>
             <artifactId>mule-http-connector</artifactId>
             <version>1.10.0</version>
             <classifier>mule-plugin</classifier>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -59,27 +52,21 @@
                 <configuration>
                     <cloudhub2Deployment>
 
-                        <!-- Platform -->
                         <uri>https://anypoint.mulesoft.com</uri>
                         <provider>MC</provider>
 
-                        <!-- Environment -->
                         <environment>Sandbox</environment>
                         <target>Shared Space</target>
 
-                        <!-- Application -->
                         <applicationName>testing-github-madhavi-001</applicationName>
 
-                        <!-- Runtime -->
-                        <muleVersion>${app.runtime}</muleVersion>
+                        <muleVersion>4.11.3</muleVersion>
                         <releaseChannel>EDGE</releaseChannel>
                         <javaVersion>17</javaVersion>
 
-                        <!-- Resources -->
                         <replicas>1</replicas>
                         <vCores>0.1</vCores>
 
-                        <!-- Authentication -->
                         <connectedAppClientId>${env.ANYPOINT_CLIENT_ID}</connectedAppClientId>
                         <connectedAppClientSecret>${env.ANYPOINT_CLIENT_SECRET}</connectedAppClientSecret>
                         <connectedAppGrantType>client_credentials</connectedAppGrantType>
