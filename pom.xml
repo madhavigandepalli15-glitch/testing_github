@@ -66,9 +66,7 @@
                         <!-- CloudHub 2.0 -->
                         <provider>MC</provider>
                         <environment>Sandbox</environment>
-                        <target>Shared Space</target>
-                        <targetType>sharedSpace</targetType>
-
+                        
                         <!-- Application -->
                         <applicationName>testing-github-madhavi-001</applicationName>
 
