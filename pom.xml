@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0          http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+<<<<<<< HEAD
 	<modelVersion>4.0.0</modelVersion>
+=======
+    <modelVersion>4.0.0</modelVersion>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 	<groupId>com.mycompany</groupId>
 	<artifactId>testing_github</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
+=======
+    <groupId>com.mycompany</groupId>
+    <artifactId>testing_github</artifactId>
+    <version>1.0.0</version>
+    <packaging>mule-application</packaging>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 	<name>testing_github</name>
+=======
+    <name>testing_github</name>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<app.runtime>4.6.0</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
 	</properties>
+=======
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <app.runtime>4.6.0</app.runtime>
+        <mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
+    </properties>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 	<!-- REQUIRED: MuleSoft repositories -->
 	<repositories>
 		<repository>
@@ -24,7 +48,18 @@
 			<url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
 		</repository>
 	</repositories>
+=======
+    <!-- REQUIRED: MuleSoft repositories -->
+    <repositories>
+        <repository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Releases</name>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 	<pluginRepositories>
 		<pluginRepository>
 			<id>mulesoft-releases</id>
@@ -32,40 +67,103 @@
 			<url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
 		</pluginRepository>
 	</pluginRepositories>
+=======
+    <pluginRepositories>
+        <pluginRepository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Releases</name>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/releases/</url>
+        </pluginRepository>
+    </pluginRepositories>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 	<build>
 		<plugins>
+=======
+    <build>
+        <plugins>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+=======
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>${mule.maven.plugin.version}</version>
+                <extensions>true</extensions>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
+=======
+                <configuration>
+                    <cloudHubDeployment>
+                        <uri>https://anypoint.mulesoft.com</uri>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 						<muleVersion>${app.runtime}</muleVersion>
+=======
+                        <muleVersion>${app.runtime}</muleVersion>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 						<username>${env.ANYPOINT_USERNAME}</username>
 						<password>${env.ANYPOINT_PASSWORD}</password>
+=======
+                        <username>${env.ANYPOINT_USERNAME}</username>
+                        <password>${env.ANYPOINT_PASSWORD}</password>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 						<applicationName>testing-github-app</applicationName>
+=======
+                        <applicationName>testing-github-app</applicationName>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 						<environment>Sandbox</environment>
+=======
+                        <environment>Sandbox</environment>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 						<workers>1</workers>
 						<workerType>MICRO</workerType>
+=======
+                        <workers>1</workers>
+                        <workerType>MICRO</workerType>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 						<region>us-east-1</region>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
+=======
+                        <region>us-east-1</region>
+                    </cloudHubDeployment>
+                </configuration>
+            </plugin>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 		</plugins>
 	</build>
+=======
+        </plugins>
+    </build>
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 
+<<<<<<< HEAD
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
@@ -74,4 +172,6 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
+=======
+>>>>>>> branch 'master' of https://github.com/madhavigandepalli15-glitch/testing_github.git
 </project>
