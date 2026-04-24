@@ -14,7 +14,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <app.runtime>4.11.3</app.runtime>
-        <mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
+        <mule.maven.plugin.version>4.6.0</mule.maven.plugin.version>
     </properties>
 
     <!-- MuleSoft Repositories -->
@@ -50,7 +50,6 @@
     <build>
         <plugins>
 
-            <!-- Mule Maven Plugin -->
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>mule-maven-plugin</artifactId>
@@ -60,14 +59,14 @@
                 <configuration>
                     <cloudhub2Deployment>
 
-                        <!-- Anypoint Platform -->
+                        <!-- Platform -->
                         <uri>https://anypoint.mulesoft.com</uri>
-
-                        <!-- CloudHub 2.0 -->
                         <provider>MC</provider>
+
+                        <!-- Environment -->
                         <environment>Sandbox</environment>
-                             <target>US East (Ohio)</target>
-                        
+                        <target>Shared Space</target>
+
                         <!-- Application -->
                         <applicationName>testing-github-madhavi-001</applicationName>
 
