@@ -18,7 +18,7 @@ jobs:
           java-version: 17
 
       - name: Build and Deploy
-        run: mvn clean package mule:deploy --no-transfer-progress
+        run: mvn clean deploy mule:deploy --no-transfer-progress
         # TO this
 env:
   ANYPOINT_CLIENT_ID: ${{ secrets.ANYPOINT_CLIENT_ID }}
